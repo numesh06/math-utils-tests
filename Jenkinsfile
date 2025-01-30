@@ -1,9 +1,10 @@
 pipeline {
   agent any
+  
   stages {
     stage('Test') {
       steps {
-        sh 'pytest test/ --junitxml=pytest_report.xml'
+        bat 'pytest test/ --junitxml=pytest_report.xml'
       }
     }
   }
