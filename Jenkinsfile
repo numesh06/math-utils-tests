@@ -12,9 +12,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            junit 'pytest_report.xml'
-        }
-    }
 }
