@@ -7,7 +7,7 @@ pipeline {
                     python --version
                     pip --version
                     pytest --version
-                    pytest test/ --junitxml=pytest_report.xml
+                    pytest tests/ --junitxml=pytest_report.xml
                 '''
             }
         }
